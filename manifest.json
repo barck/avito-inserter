@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Avito inserter",
 	"description": "Подстановка значений в поля",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"icons": {"128": "icon.png"},
 	"browser_action": {
 		"default_icon": "icon.png",
@@ -11,7 +11,7 @@
 	"content_scripts": [
 		{
 		  "matches": [
-			"<all_urls>"
+			"*://www.avito.ru/safety/*"
 		  ],
 		  "js": ["app.js"]
 		}
